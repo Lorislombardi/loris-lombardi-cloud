@@ -4,6 +4,8 @@
   <url>
     <loc>https://blog.l0ris.fr/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -17,6 +19,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/categories/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -30,6 +34,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/tags/cloud-director/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,6 +49,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/tags/container-service-engine/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -56,6 +64,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/tags/kubernetes/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -69,6 +79,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/post/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -82,6 +94,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/tags/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -95,6 +109,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/tags/tkgm/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -108,6 +124,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/p/csi-nfs-container-service-engine/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -121,6 +139,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/categories/vmware/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -134,6 +154,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -147,6 +169,8 @@
   </url><url>
     <loc>https://blog.l0ris.fr/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -159,6 +183,8 @@
                 />
   </url><url>
     <loc>https://blog.l0ris.fr/about/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -171,6 +197,8 @@
                 />
   </url><url>
     <loc>https://blog.l0ris.fr/categories/fortinet/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -183,8 +211,12 @@
                 />
   </url><url>
     <loc>https://blog.l0ris.fr/link/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://blog.l0ris.fr/search/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
