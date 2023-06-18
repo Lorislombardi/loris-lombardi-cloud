@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>VMware on Loris Lombardi</title>
-        <link>https://loris-lombardi.cloud/en/categories/vmware/</link>
+        <link>https://www.loris-lombardi.cloud/en/categories/vmware/</link>
         <description>Recent content in VMware on Loris Lombardi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://loris-lombardi.cloud/en/categories/vmware/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/en/categories/vmware/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine</title>
-        <link>https://loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/</link>
+        <link>https://www.loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/</link>
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/</guid>
-        <description>&lt;img src="https://loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/tkgm-csi-nfs.jpg" alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine" /&gt;&lt;p&gt;In this article we&amp;rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Engine (CSE).&lt;/p&gt;
+        <guid>https://www.loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/</guid>
+        <description>&lt;img src="https://www.loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/tkgm-csi-nfs.jpg" alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine" /&gt;&lt;p&gt;In this article we&amp;rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Engine (CSE).&lt;/p&gt;
 &lt;h1 id=&#34;why-use-another-storage-driver&#34;&gt;Why use another storage driver?&lt;/h1&gt;
 &lt;p&gt;Clusters deployed by CSE are installed by default with the following driver &lt;a class=&#34;link&#34; href=&#34;https://github.com/vmware/cloud-director-named-disk-csi-driver&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;cloud-director-named-disk-csi-driver&lt;/a&gt;&lt;/p&gt;
