@@ -2,226 +2,226 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.l0ris.fr/en/</loc>
+    <loc>https://loris-lombardi.cloud/en/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/"
+                href="https://loris-lombardi.cloud/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/"
+                href="https://loris-lombardi.cloud/en/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/categories/</loc>
+    <loc>https://loris-lombardi.cloud/en/categories/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/categories/"
+                href="https://loris-lombardi.cloud/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/categories/"
+                href="https://loris-lombardi.cloud/en/categories/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/tags/cloud-director/</loc>
+    <loc>https://loris-lombardi.cloud/en/tags/cloud-director/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/tags/cloud-director/"
+                href="https://loris-lombardi.cloud/tags/cloud-director/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/tags/cloud-director/"
+                href="https://loris-lombardi.cloud/en/tags/cloud-director/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/tags/container-service-engine/</loc>
+    <loc>https://loris-lombardi.cloud/en/tags/container-service-engine/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/tags/container-service-engine/"
+                href="https://loris-lombardi.cloud/tags/container-service-engine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/tags/container-service-engine/"
+                href="https://loris-lombardi.cloud/en/tags/container-service-engine/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/tags/kubernetes/</loc>
+    <loc>https://loris-lombardi.cloud/en/tags/kubernetes/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/tags/kubernetes/"
+                href="https://loris-lombardi.cloud/tags/kubernetes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/tags/kubernetes/"
+                href="https://loris-lombardi.cloud/en/tags/kubernetes/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/post/</loc>
+    <loc>https://loris-lombardi.cloud/en/post/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/post/"
+                href="https://loris-lombardi.cloud/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/post/"
+                href="https://loris-lombardi.cloud/en/post/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/p/csi-nfs-container-service-engine/</loc>
+    <loc>https://loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/p/csi-nfs-container-service-engine/"
+                href="https://loris-lombardi.cloud/p/csi-nfs-container-service-engine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/p/csi-nfs-container-service-engine/"
+                href="https://loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/tags/</loc>
+    <loc>https://loris-lombardi.cloud/en/tags/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/tags/"
+                href="https://loris-lombardi.cloud/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/tags/"
+                href="https://loris-lombardi.cloud/en/tags/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/tags/tkgm/</loc>
+    <loc>https://loris-lombardi.cloud/en/tags/tkgm/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/tags/tkgm/"
+                href="https://loris-lombardi.cloud/tags/tkgm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/tags/tkgm/"
+                href="https://loris-lombardi.cloud/en/tags/tkgm/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/categories/vmware/</loc>
+    <loc>https://loris-lombardi.cloud/en/categories/vmware/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/categories/vmware/"
+                href="https://loris-lombardi.cloud/categories/vmware/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/categories/vmware/"
+                href="https://loris-lombardi.cloud/en/categories/vmware/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/archives/</loc>
+    <loc>https://loris-lombardi.cloud/en/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/archives/"
+                href="https://loris-lombardi.cloud/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/archives/"
+                href="https://loris-lombardi.cloud/en/archives/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/page/</loc>
+    <loc>https://loris-lombardi.cloud/en/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/page/"
+                href="https://loris-lombardi.cloud/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/page/"
+                href="https://loris-lombardi.cloud/en/page/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/about/</loc>
+    <loc>https://loris-lombardi.cloud/en/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/about/"
+                href="https://loris-lombardi.cloud/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/about/"
+                href="https://loris-lombardi.cloud/en/about/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/categories/fortinet/</loc>
+    <loc>https://loris-lombardi.cloud/en/categories/fortinet/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/categories/fortinet/"
+                href="https://loris-lombardi.cloud/categories/fortinet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/categories/fortinet/"
+                href="https://loris-lombardi.cloud/en/categories/fortinet/"
                 />
   </url><url>
-    <loc>https://blog.l0ris.fr/en/search/</loc>
+    <loc>https://loris-lombardi.cloud/en/search/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://blog.l0ris.fr/search/"
+                href="https://loris-lombardi.cloud/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blog.l0ris.fr/en/search/"
+                href="https://loris-lombardi.cloud/en/search/"
                 />
   </url>
 </urlset>

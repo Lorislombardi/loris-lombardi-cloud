@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Fortinet on Loris Lombardi</title>
-        <link>https://blog.l0ris.fr/en/categories/fortinet/</link>
+        <link>https://loris-lombardi.cloud/en/categories/fortinet/</link>
         <description>Recent content in Fortinet on Loris Lombardi</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language><atom:link href="https://blog.l0ris.fr/en/categories/fortinet/index.xml" rel="self" type="application/rss+xml" />
+        <language>en</language><atom:link href="https://loris-lombardi.cloud/en/categories/fortinet/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

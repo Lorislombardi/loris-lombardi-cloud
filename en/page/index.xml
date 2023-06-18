@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Loris Lombardi</title>
-        <link>https://blog.l0ris.fr/en/page/</link>
+        <link>https://loris-lombardi.cloud/en/page/</link>
         <description>Recent content in Pages on Loris Lombardi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.l0ris.fr/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://loris-lombardi.cloud/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://blog.l0ris.fr/en/archives/</link>
+        <link>https://loris-lombardi.cloud/en/archives/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.l0ris.fr/en/archives/</guid>
+        <guid>https://loris-lombardi.cloud/en/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>https://blog.l0ris.fr/en/about/</link>
+        <link>https://loris-lombardi.cloud/en/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.l0ris.fr/en/about/</guid>
+        <guid>https://loris-lombardi.cloud/en/about/</guid>
         <description>&lt;p&gt;Passionate about cloud and network environments through this blog I want to share my knowledge, my discoveries and my advice around VMware, Fortinet and Cisco technologies, PowerShell scripting.&lt;/p&gt;
 &lt;p&gt;&lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;62074aaa-abb5-4de7-807f-cc37c9ca26e8&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt;&lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;4a446972-0d7e-45da-a9d6-4e30adc94c50&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt; &lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;6f3cf42b-7c70-4cd9-99e9-41fba1a508fa&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;&lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;7f53811a-cfbd-4a12-aa1c-5803d55722cc&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt; &lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;f0ab02a6-0887-459f-9617-c48e86b13f1d&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
@@ -27,10 +27,10 @@
         </item>
         <item>
         <title>Search</title>
-        <link>https://blog.l0ris.fr/en/search/</link>
+        <link>https://loris-lombardi.cloud/en/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.l0ris.fr/en/search/</guid>
+        <guid>https://loris-lombardi.cloud/en/search/</guid>
         <description></description>
         </item>
         
