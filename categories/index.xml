@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Loris Lombardi</title>
+        <link>https://blog.l0ris.fr/categories/</link>
+        <description>Recent content in Categories on Loris Lombardi</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fr</language>
+        <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.l0ris.fr/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>VMware</title>
+        <link>https://blog.l0ris.fr/categories/vmware/</link>
+        <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.l0ris.fr/categories/vmware/</guid>
+        <description>&lt;img src="https://blog.l0ris.fr/categories/vmware/vmware-1.svg" alt="Featured image of post VMware" /&gt;</description>
+        </item>
+        <item>
+        <title>Fortinet</title>
+        <link>https://blog.l0ris.fr/categories/fortinet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.l0ris.fr/categories/fortinet/</guid>
+        <description>&lt;img src="https://blog.l0ris.fr/categories/fortinet/fortinet.svg" alt="Featured image of post Fortinet" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
