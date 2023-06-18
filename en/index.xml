@@ -83,7 +83,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;csi-nfs-driver-installation&#34;&gt;CSI NFS driver installation&lt;/h1&gt;
-&lt;h2 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h2&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;A functional Kubernetes cluster&lt;/li&gt;
 &lt;li&gt;Some Kubernetes knowledge&lt;/li&gt;
