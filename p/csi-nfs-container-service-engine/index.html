@@ -480,7 +480,7 @@ if (!doNotTrack) {
 <li>Helm</li>
 </ul>
 <h2 id="serveur-nfs-et-pvc">Serveur NFS et PVC</h2>
-<p>Dans cet exemple nous avons un cluster Kubernetes déployé par CSE 4.0.3 composée d&rsquo;un master node et d&rsquo;un worker node en version 1.21</p>
+<p>Dans cet exemple nous avons un cluster Kubernetes déployé par CSE 4.0.3 composé d&rsquo;un master node et d&rsquo;un worker node en version 1.21</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -782,9 +782,9 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">nfs-server   ClusterIP   100.64.116.170   &lt;none&gt;        2049/TCP,111/UDP   3m12s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Étant donné que nous avons créer notre service dans le namespace nfs-csi celui-ci répond donc au fqdn <strong>nfs-server.nfs-csi.svc.cluster.local</strong></p>
+</div><p>Étant donné que nous avons cré notre service dans le namespace nfs-csi celui-ci répond donc au fqdn <strong>nfs-server.nfs-csi.svc.cluster.local</strong></p>
 <h2 id="storageclass-nfs">StorageClass NFS</h2>
-<p>Pour finir, nous allons créer une nouvelle StorageClass qui utilisera le serveur NFS précédemment créer. Vous pouvez également utiliser un autre serveur NFS présent dans votre environnement (VM NFS, NFS NetApp&hellip;)</p>
+<p>Pour finir, nous allons créer une nouvelle StorageClass qui utilisera le serveur NFS précédemment créé. Vous pouvez également utiliser un autre serveur NFS présent dans votre environnement (VM NFS, NFS NetApp&hellip;)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

@@ -12,7 +12,7 @@
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Engine autoscaling" /&gt;&lt;p&gt;Dans cet article nous allons configurer l&amp;rsquo;autoscaling de worker node pour un cluster Kubernetes déployé avec Contaier Service Engine 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployé des Worker node supplémentaire en fonction de la charge nécessaire pour vos applications.&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Engine autoscaling" /&gt;&lt;p&gt;Dans cet article nous allons configurer l&amp;rsquo;autoscaling d&amp;rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Engine 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.&lt;/p&gt;
 &lt;h1 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Un cluster Kubernetes fonctionnel déployé avec Container Service Engine&lt;/li&gt;
@@ -85,7 +85,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;test-hpa&#34;&gt;Test HPA&lt;/h2&gt;
-&lt;p&gt;À partir du template suivant, nous allons configurer un de déploiement et lui associer une politique HPA&lt;/p&gt;
+&lt;p&gt;À partir du template suivant, nous allons configurer un déploiement et lui associer une politique HPA&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -207,7 +207,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;nginx-nfs-example             1/1     Running   0          12h
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Nous créons en suite une VIP de type Load-balancer pour notre déploiement&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Nous créons ensuite une VIP de type Load-balancer pour notre déploiement&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -287,7 +287,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;hpa-example-autoscaler   Deployment/hpa-example   381%/50%   1         10        4          35m
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;On peut voire que l&amp;rsquo;HPA essaye de créer de nouveau POD cependant les ressources CPU du worker node sont également statué&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;On peut voir que l&amp;rsquo;HPA essaye de créer de nouveau POD cependant les ressources CPU du worker node sont également saturés&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -325,9 +325,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;activation-de-lautoscaling&#34;&gt;Activation de l&amp;rsquo;autoscaling&lt;/h1&gt;
-&lt;p&gt;Cette fonctionnalité n&amp;rsquo;est pas activée par défaut sur les cluster Kubernetes déployé par CSE et n&amp;rsquo;est pas encore implémentée par VMware. Voici une méthode pas à pas pour configurer cette fonctionnalité en attendant que celle-ci soit intégrée dans la road-map de développement.&lt;/p&gt;
+&lt;p&gt;Cette fonctionnalité n&amp;rsquo;est pas activée par défaut sur les cluster Kubernetes déployés par CSE et n&amp;rsquo;est pas encore implémentée par VMware. Voici une méthode pas à pas pour configurer cette fonctionnalité en attendant que celle-ci soit intégrée dans la road-map de développement.&lt;/p&gt;
 &lt;h2 id=&#34;préparation-des-composants-nécessaires&#34;&gt;Préparation des composants nécessaires&lt;/h2&gt;
-&lt;p&gt;Identifier le namespace admin de votre cluster. Dans cet exemple mon cluster et nommé &lt;strong&gt;k8slorislombardi&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Identifier le namespace admin de votre cluster. Dans cet exemple mon cluster est nommé &lt;strong&gt;k8slorislombardi&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -558,7 +558,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;déploiement-de-lautoscaler&#34;&gt;Déploiement de l&amp;rsquo;autoscaler&lt;/h2&gt;
-&lt;p&gt;Nous utilisons le yaml suivant pour qu’il utilise le PVC précédemment créer afin de récupérer le kubeconfig.&lt;/p&gt;
+&lt;p&gt;Nous utilisons le yaml suivant pour qu’il utilise le PVC précédemment créé afin de récupérer le kubeconfig.&lt;/p&gt;
 &lt;p&gt;Veillez à bien remplacer &lt;strong&gt;k8slorislombardi&lt;/strong&gt; et &lt;strong&gt;k8slorislombardi-ns&lt;/strong&gt; par les paramètres de votre cluster&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -956,7 +956,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;configuration-rdeprojector&#34;&gt;Configuration rdeprojector&lt;/h2&gt;
-&lt;p&gt;Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&amp;rsquo;ajouter ou supprimer des worker à partir de l&amp;rsquo;interface graphique de cloud director&lt;/p&gt;
+&lt;p&gt;Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&amp;rsquo;ajouter ou supprimer des worker node à partir de l&amp;rsquo;interface graphique de cloud director&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png&#34;
 	width=&#34;1691&#34;
 	height=&#34;703&#34;
@@ -1016,7 +1016,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Comme vu précédemment quelques minutes plus tard le CPU des Pod et du Worker node sont saturé&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Comme vu précédemment quelques minutes plus tard le CPU des Pod et du Worker node sont saturés&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1190,7 +1190,7 @@
 &lt;li&gt;Helm&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;serveur-nfs-et-pvc&#34;&gt;Serveur NFS et PVC&lt;/h2&gt;
-&lt;p&gt;Dans cet exemple nous avons un cluster Kubernetes déployé par CSE 4.0.3 composée d&amp;rsquo;un master node et d&amp;rsquo;un worker node en version 1.21&lt;/p&gt;
+&lt;p&gt;Dans cet exemple nous avons un cluster Kubernetes déployé par CSE 4.0.3 composé d&amp;rsquo;un master node et d&amp;rsquo;un worker node en version 1.21&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1492,9 +1492,9 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;nfs-server   ClusterIP   100.64.116.170   &amp;lt;none&amp;gt;        2049/TCP,111/UDP   3m12s
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Étant donné que nous avons créer notre service dans le namespace nfs-csi celui-ci répond donc au fqdn &lt;strong&gt;nfs-server.nfs-csi.svc.cluster.local&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Étant donné que nous avons cré notre service dans le namespace nfs-csi celui-ci répond donc au fqdn &lt;strong&gt;nfs-server.nfs-csi.svc.cluster.local&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;storageclass-nfs&#34;&gt;StorageClass NFS&lt;/h2&gt;
-&lt;p&gt;Pour finir, nous allons créer une nouvelle StorageClass qui utilisera le serveur NFS précédemment créer. Vous pouvez également utiliser un autre serveur NFS présent dans votre environnement (VM NFS, NFS NetApp&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Pour finir, nous allons créer une nouvelle StorageClass qui utilisera le serveur NFS précédemment créé. Vous pouvez également utiliser un autre serveur NFS présent dans votre environnement (VM NFS, NFS NetApp&amp;hellip;)&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1

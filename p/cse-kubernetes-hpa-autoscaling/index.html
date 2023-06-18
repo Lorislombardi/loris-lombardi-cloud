@@ -408,7 +408,7 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>Dans cet article nous allons configurer l&rsquo;autoscaling de worker node pour un cluster Kubernetes déployé avec Contaier Service Engine 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployé des Worker node supplémentaire en fonction de la charge nécessaire pour vos applications.</p>
+    <p>Dans cet article nous allons configurer l&rsquo;autoscaling d&rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Engine 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.</p>
 <h1 id="pré-requis">Pré requis</h1>
 <ul>
 <li>Un cluster Kubernetes fonctionnel déployé avec Container Service Engine</li>
@@ -481,7 +481,7 @@ if (!doNotTrack) {
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="test-hpa">Test HPA</h2>
-<p>À partir du template suivant, nous allons configurer un de déploiement et lui associer une politique HPA</p>
+<p>À partir du template suivant, nous allons configurer un déploiement et lui associer une politique HPA</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -603,7 +603,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">nginx-nfs-example             1/1     Running   0          12h
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Nous créons en suite une VIP de type Load-balancer pour notre déploiement</p>
+</div><p>Nous créons ensuite une VIP de type Load-balancer pour notre déploiement</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -683,7 +683,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">hpa-example-autoscaler   Deployment/hpa-example   381%/50%   1         10        4          35m
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>On peut voire que l&rsquo;HPA essaye de créer de nouveau POD cependant les ressources CPU du worker node sont également statué</p>
+</div><p>On peut voir que l&rsquo;HPA essaye de créer de nouveau POD cependant les ressources CPU du worker node sont également saturés</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -721,9 +721,9 @@ if (!doNotTrack) {
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="activation-de-lautoscaling">Activation de l&rsquo;autoscaling</h1>
-<p>Cette fonctionnalité n&rsquo;est pas activée par défaut sur les cluster Kubernetes déployé par CSE et n&rsquo;est pas encore implémentée par VMware. Voici une méthode pas à pas pour configurer cette fonctionnalité en attendant que celle-ci soit intégrée dans la road-map de développement.</p>
+<p>Cette fonctionnalité n&rsquo;est pas activée par défaut sur les cluster Kubernetes déployés par CSE et n&rsquo;est pas encore implémentée par VMware. Voici une méthode pas à pas pour configurer cette fonctionnalité en attendant que celle-ci soit intégrée dans la road-map de développement.</p>
 <h2 id="préparation-des-composants-nécessaires">Préparation des composants nécessaires</h2>
-<p>Identifier le namespace admin de votre cluster. Dans cet exemple mon cluster et nommé <strong>k8slorislombardi</strong></p>
+<p>Identifier le namespace admin de votre cluster. Dans cet exemple mon cluster est nommé <strong>k8slorislombardi</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -954,7 +954,7 @@ if (!doNotTrack) {
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="déploiement-de-lautoscaler">Déploiement de l&rsquo;autoscaler</h2>
-<p>Nous utilisons le yaml suivant pour qu’il utilise le PVC précédemment créer afin de récupérer le kubeconfig.</p>
+<p>Nous utilisons le yaml suivant pour qu’il utilise le PVC précédemment créé afin de récupérer le kubeconfig.</p>
 <p>Veillez à bien remplacer <strong>k8slorislombardi</strong> et <strong>k8slorislombardi-ns</strong> par les paramètres de votre cluster</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1352,7 +1352,7 @@ if (!doNotTrack) {
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="configuration-rdeprojector">Configuration rdeprojector</h2>
-<p>Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&rsquo;ajouter ou supprimer des worker à partir de l&rsquo;interface graphique de cloud director</p>
+<p>Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&rsquo;ajouter ou supprimer des worker node à partir de l&rsquo;interface graphique de cloud director</p>
 <p><img src="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png"
 	width="1691"
 	height="703"
@@ -1412,7 +1412,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Comme vu précédemment quelques minutes plus tard le CPU des Pod et du Worker node sont saturé</p>
+</div><p>Comme vu précédemment quelques minutes plus tard le CPU des Pod et du Worker node sont saturés</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
