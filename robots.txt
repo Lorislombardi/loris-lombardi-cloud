@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://loris-lombardi.cloud/sitemap.xml
+Sitemap: https://www.loris-lombardi.cloud/sitemap.xml
