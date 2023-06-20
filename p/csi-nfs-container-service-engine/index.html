@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Installation driver csi NFS'>
-<title>TKGm Container Service Engine driver NFS</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Setup driver csi NFS'>
+<title>Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine</title>
 
 <link rel='canonical' href='https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/'>
 
-<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='TKGm Container Service Engine driver NFS'>
-<meta property='og:description' content='Installation driver csi NFS'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine'>
+<meta property='og:description' content='Setup driver csi NFS'>
 <meta property='og:url' content='https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/'>
 <meta property='og:site_name' content='Loris Lombardi'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloud Director' /><meta property='article:tag' content='Kubernetes' /><meta property='article:tag' content='Container Service Engine' /><meta property='article:tag' content='TKGm' /><meta property='article:published_time' content='2023-06-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/tkgm-csi-nfs.jpg' />
-<meta name="twitter:title" content="TKGm Container Service Engine driver NFS">
-<meta name="twitter:description" content="Installation driver csi NFS"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine">
+<meta name="twitter:description" content="Setup driver csi NFS"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/tkgm-csi-nfs.jpg' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCJM3RBJDN"></script>
 <script>
@@ -52,7 +52,7 @@ if (!doNotTrack) {
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -219,9 +219,9 @@ if (!doNotTrack) {
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://www.loris-lombardi.cloud/" selected>Francais</option>
+                            <option value="https://www.loris-lombardi.cloud/fr/" >Francais</option>
                         
-                            <option value="https://www.loris-lombardi.cloud/en/" >English</option>
+                            <option value="https://www.loris-lombardi.cloud/" selected>English</option>
                         
                     </select>
                 </li>
@@ -245,7 +245,7 @@ if (!doNotTrack) {
 
 
 
-                    <span>Mode sombre</span>
+                    <span>Dark Mode</span>
                 </li>
             
         </div>
@@ -269,23 +269,23 @@ if (!doNotTrack) {
 
 
         </div>
-        <h2 class="widget-title section-title">Table des matières</h2>
+        <h2 class="widget-title section-title">Table of contents</h2>
         
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#pourquoi-utiliser-un-autre-driver-de-stockage-">Pourquoi utiliser un autre driver de stockage ?</a></li>
-    <li><a href="#installation-du-driver-csi-nfs">Installation du driver CSI NFS</a>
+    <li><a href="#why-use-another-storage-driver">Why use another storage driver?</a></li>
+    <li><a href="#csi-nfs-driver-installation">CSI NFS driver installation</a>
       <ol>
-        <li><a href="#pré-requis">Pré requis</a></li>
-        <li><a href="#serveur-nfs-et-pvc">Serveur NFS et PVC</a></li>
-        <li><a href="#storageclass-nfs">StorageClass NFS</a></li>
+        <li><a href="#requirement">Requirement</a></li>
+        <li><a href="#nfs-server-and-pvc">NFS server and PVC</a></li>
+        <li><a href="#nfs-storageclass">NFS StorageClass</a></li>
       </ol>
     </li>
-    <li><a href="#test-du-driver-nfs">Test du Driver NFS</a>
+    <li><a href="#nfs-driver-test">NFS driver test</a>
       <ol>
-        <li><a href="#création-dun-pvc-nfs-et-dun-pod">Création d&rsquo;un PVC NFS et d&rsquo;un Pod</a></li>
-        <li><a href="#vérification-globale">Vérification globale</a></li>
+        <li><a href="#setup-nfs-pvc-and-pod">Setup NFS PVC and Pod</a></li>
+        <li><a href="#global-check">Global check</a></li>
       </ol>
     </li>
   </ol>
@@ -308,7 +308,7 @@ if (!doNotTrack) {
                         width="800" 
                         height="376" 
                         loading="lazy"
-                        alt="Featured image of post TKGm Container Service Engine driver NFS" />
+                        alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine" />
                 
             </a>
         </div>
@@ -327,12 +327,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/csi-nfs-container-service-engine/">TKGm Container Service Engine driver NFS</a>
+            <a href="/p/csi-nfs-container-service-engine/">Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Installation driver csi NFS
+            Setup driver csi NFS
         </h3>
         
     </div>
@@ -368,7 +368,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    6 minutes de lecture
+                    6 minute read
                 </time>
             </div>
         
@@ -390,7 +390,7 @@ if (!doNotTrack) {
 
             <div>
                 
-                    <a href="https://www.loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/" class="link">English</a>
+                    <a href="https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-engine/" class="link">Francais</a>
                 
             </div>
         </footer>
@@ -402,11 +402,11 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>Dans cet article nous allons installer un nouveau driver de stockage pour les données persistantes de vos containers hébergés sur un cluster Tanzu TKGm fournis par Cloud Director et Container Service Engine (CSE).</p>
-<h1 id="pourquoi-utiliser-un-autre-driver-de-stockage-">Pourquoi utiliser un autre driver de stockage ?</h1>
-<p>Les clusters déployés par CSE sont installés par défaut avec le driver <a class="link" href="https://github.com/vmware/cloud-director-named-disk-csi-driver"  target="_blank" rel="noopener"
+    <p>In this article we&rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Engine (CSE).</p>
+<h1 id="why-use-another-storage-driver">Why use another storage driver?</h1>
+<p>Clusters deployed by CSE are installed by default with the following driver <a class="link" href="https://github.com/vmware/cloud-director-named-disk-csi-driver"  target="_blank" rel="noopener"
     >cloud-director-named-disk-csi-driver</a></p>
-<p>Cependant ce driver possède quelques limites, notamment sur les modes d&rsquo;accès</p>
+<p>However, this driver has a number of limitations, particularly with regard to access modes</p>
 <p><strong>CSI Cloud Director Feature matrix</strong></p>
 <div class="table-wrapper"><table>
 <thead>
@@ -442,8 +442,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table></div>
-<p>Comme nous pouvons le voir sur le tableau ci-dessus extrait de la documentation du driver par défaut, il n&rsquo;est pas possible de créer des PVC de type ReadWriteMany. Cela peut être problématique dans le cas où plusieurs Pod souhaitent écrire de la data dans le même PVC.</p>
-<p>Avec ce driver il n&rsquo;est pas non plus possible d&rsquo;assigner plus de 15 volumes par worker node.</p>
+<p>As can be seen from the table above, taken from the default driver documentation, it is not possible to create ReadWriteMany PVCs. This can be problematic if several Pods wish to write data to the same PVC.</p>
+<p>Nor is it possible to assign more than 15 volumes per worker node with this driver.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -472,15 +472,15 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="installation-du-driver-csi-nfs">Installation du driver CSI NFS</h1>
-<h2 id="pré-requis">Pré requis</h2>
+</div><h1 id="csi-nfs-driver-installation">CSI NFS driver installation</h1>
+<h2 id="requirement">Requirement</h2>
 <ul>
-<li>Un cluster Kubernetes fonctionnel</li>
-<li>Quelques connaissances Kubernetes</li>
+<li>A functional Kubernetes cluster</li>
+<li>Some Kubernetes knowledge</li>
 <li>Helm</li>
 </ul>
-<h2 id="serveur-nfs-et-pvc">Serveur NFS et PVC</h2>
-<p>Dans cet exemple nous avons un cluster Kubernetes déployé par CSE 4.0.3 composé d&rsquo;un master node et d&rsquo;un worker node en version 1.21</p>
+<h2 id="nfs-server-and-pvc">NFS server and PVC</h2>
+<p>In this example we have a Kubernetes cluster deployed by CSE 4.0.3, with one a master node and one worker node in version 1.21.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -495,7 +495,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">k8slorislombardi-worker-node-pool-1-69f68cc6b9-kfhz9   Ready    &lt;none&gt;                 6h16m   v1.21.11+vmware.1
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Nous installons le driver via helm</p>
+</div><p>We install the driver with helm</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -506,8 +506,8 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">helm install csi-driver-nfs csi-driver-nfs/csi-driver-nfs --namespace kube-system
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Nous devons modifier la configuration par défaut du chart Helm. Vous pouvez éditer directement la configuration des  deployments et des daemonsets ou modifier le fichier values.yaml du repository helm</p>
-<p><strong>Modification dnsPolicy</strong></p>
+</div><p>We need to modify the default configuration of the Helm chart. You can edit the deployments and daemonsets configuration directly or modify the values.yaml file in the helm repository.</p>
+<p><strong>Modify dnsPolicy</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -518,7 +518,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">k edit daemonsets.apps csi-nfs-node -n kube-system
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Remplacer</p>
+</div><p>Replace</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -527,7 +527,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">dnsPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">Default </span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Par</p>
+</div><p>With</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -536,7 +536,7 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">dnsPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">ClusterFirstWithHostNet</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Vérification</p>
+</div><p>Check</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -551,10 +551,10 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">csi-nfs-node-vwf44                                                       3/3     Running   0          6m37s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Nous allons créer un PVC qui sera utilisé par notre serveur NFS.
-Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driver.</p>
-<p>Veillez à configurer la taille de ce PVC en fonction de vos besoins et de vos futurs besoins, car la taille de ce PVC ne pourra pas être modifiée</p>
-<p>Dans cet exemple le driver cloud-director-named-disk-csi-driver est porté par la StorageClasse <strong>default-storage-class-1</strong></p>
+</div><p>We&rsquo;re going to create a PVC that will be used by our NFS server.
+This PVC is created via the default driver: cloud-director-named-disk-csi-driver.</p>
+<p>Be sure to configure the size of this PVC according to your needs and future requirements, as the size of this PVC cannot be modified.</p>
+<p>In this example, the cloud-director-named-disk-csi-driver is provide by the StorageClass <strong>default-storage-class-1</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -567,7 +567,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">default-storage-class-1 (default)   named-disk.csi.cloud-director.vmware.com   Delete          Immediate           false
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Exemple d&rsquo;un PVC pour le serveur NFS</p>
+</div><p>Example of a PVC for NFS server</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -604,7 +604,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volumeMode</span><span class="p">:</span><span class="w"> </span><span class="l">Filesystem</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Nous allons créer ensuite un serveur NFS dans un namespace dédié à cet usage. Ce template va créer un pod serveur NFS et créer également un service de type ClusterIP qui sera utilisé par une nouvelle StorageClass pour nos futurs PVC NFS</p>
+</div><p>Next, we&rsquo;ll create an NFS server in a dedicated namespace. This template will create an NFS server pod and also a ClusterIP service, which will be used by a new StorageClass for our future NFS PVCs.</p>
 <p><strong>Exemple d&rsquo;un serveur NFS</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -730,7 +730,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">claimName</span><span class="p">:</span><span class="w"> </span><span class="l">pvc-nfs-csi-server</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>Création du serveur NFS</strong></p>
+</div><p><strong>Setup NFS Server</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -782,9 +782,9 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">nfs-server   ClusterIP   100.64.116.170   &lt;none&gt;        2049/TCP,111/UDP   3m12s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Étant donné que nous avons cré notre service dans le namespace nfs-csi celui-ci répond donc au fqdn <strong>nfs-server.nfs-csi.svc.cluster.local</strong></p>
-<h2 id="storageclass-nfs">StorageClass NFS</h2>
-<p>Pour finir, nous allons créer une nouvelle StorageClass qui utilisera le serveur NFS précédemment créé. Vous pouvez également utiliser un autre serveur NFS présent dans votre environnement (VM NFS, NFS NetApp&hellip;)</p>
+</div><p>Since we have created our service in the nfs-csi namespace, it responds to fqdn  <strong>nfs-server.nfs-csi.svc.cluster.local</strong></p>
+<h2 id="nfs-storageclass">NFS StorageClass</h2>
+<p>Finally, we&rsquo;ll create a new StorageClass using the previously created NFS server. You can also use another NFS server present in your environment (VM NFS, NFS NetApp&hellip;).</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -835,8 +835,8 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">nfs-csi                             nfs.csi.k8s.io                             Delete          Immediate           true                   18s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="test-du-driver-nfs">Test du Driver NFS</h1>
-<h2 id="création-dun-pvc-nfs-et-dun-pod">Création d&rsquo;un PVC NFS et d&rsquo;un Pod</h2>
+</div><h1 id="nfs-driver-test">NFS driver test</h1>
+<h2 id="setup-nfs-pvc-and-pod">Setup NFS PVC and Pod</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -923,7 +923,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">k apply -f nginx-nfs-example.yaml
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="vérification-globale">Vérification globale</h2>
+</div><h2 id="global-check">Global check</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -944,7 +944,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
 </span></span></span><span class="line"><span class="cl"><span class="go">nginx-nfs-example   1/1     Running   0          16s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>Serveur NFS</strong></p>
+</div><p><strong>NFS Server</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1009,7 +1009,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
     
 
 <aside class="related-content--wrapper">
-    <h2 class="section-title">Contenus liés</h2>
+    <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
             
@@ -1098,8 +1098,8 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
     </section>
     
     <section class="powerby">
-        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

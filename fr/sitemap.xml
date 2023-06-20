@@ -2,241 +2,241 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.loris-lombardi.cloud/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/categories/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/categories/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/categories/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/categories/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/cloud-director/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/cloud-director/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/tags/cloud-director/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/tags/cloud-director/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/tags/cloud-director/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/container-service-engine/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/container-service-engine/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/tags/container-service-engine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/tags/container-service-engine/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/tags/container-service-engine/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/p/cse-kubernetes-hpa-autoscaling/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/kubernetes/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/kubernetes/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/tags/kubernetes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/tags/kubernetes/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/tags/kubernetes/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/post/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/post/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/post/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/post/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/tags/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/tags/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/tkgm/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/tkgm/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/tags/tkgm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/tags/tkgm/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/tags/tkgm/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/categories/vmware/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/categories/vmware/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/categories/vmware/"
+                href="https://www.loris-lombardi.cloud/categories/vmware/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.loris-lombardi.cloud/categories/vmware/"
+                href="https://www.loris-lombardi.cloud/fr/categories/vmware/"
                 />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-engine/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/p/csi-nfs-container-service-engine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-engine/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/archives/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/archives/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/archives/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/page/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/page/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/page/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/about/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/about/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/about/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/categories/fortinet/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/categories/fortinet/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/categories/fortinet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
                 href="https://www.loris-lombardi.cloud/categories/fortinet/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.loris-lombardi.cloud/fr/categories/fortinet/"
+                />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/search/</loc>
+    <loc>https://www.loris-lombardi.cloud/fr/search/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/en/search/"
+                href="https://www.loris-lombardi.cloud/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.loris-lombardi.cloud/search/"
+                href="https://www.loris-lombardi.cloud/fr/search/"
                 />
   </url>
 </urlset>
