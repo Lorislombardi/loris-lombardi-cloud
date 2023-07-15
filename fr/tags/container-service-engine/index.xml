@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>fr</language>
         <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/fr/tags/container-service-engine/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>installer NSX Application platform avec CSE</title>
+        <title>Installer NSX Application platform avec CSE</title>
         <link>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</link>
         <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autre composant de sécurité.&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autre composant de sécurité.&lt;/p&gt;
 &lt;p&gt;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service engine.&lt;/p&gt;
 &lt;h1 id=&#34;nsx-application-platform-avec-cse&#34;&gt;NSX Application Platform avec CSE&lt;/h1&gt;
 &lt;h2 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h2&gt;
