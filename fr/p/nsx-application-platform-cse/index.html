@@ -401,13 +401,13 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>Depuis la version 3.2 d&rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&rsquo;installer NSX Application Platform qui permet ensuite d&rsquo;installer NSX inteligence et d&rsquo;autre composant de sécurité.</p>
+    <p>Depuis la version 3.2 d&rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&rsquo;installer NSX Application Platform qui permet ensuite d&rsquo;installer NSX inteligence et d&rsquo;autres composants de sécurités.</p>
 <p>Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service engine.</p>
 <h1 id="nsx-application-platform-avec-cse">NSX Application Platform avec CSE</h1>
 <h2 id="pré-requis">Pré requis</h2>
 <ul>
 <li>Environnement NSX fonctionnel</li>
-<li>Environnement CSE fonctionnelle</li>
+<li>Environnement CSE fonctionnel</li>
 <li>Quelques connaissances Kubernetes</li>
 </ul>
 <h2 id="déploiement-cluster-kubernetes">Déploiement Cluster Kubernetes</h2>
@@ -458,7 +458,7 @@ if (!doNotTrack) {
 		data-flex-basis="829px"
 	
 ></p>
-<p>Vous devez augmenter l&rsquo;espace disque des worker node afin d&rsquo;avoir suffisamment d&rsquo;espace libre pour télécharger les images nécessaire à NSX Application platform</p>
+<p>Vous devez augmenter l&rsquo;espace disque des worker node afin d&rsquo;avoir suffisamment d&rsquo;espace libre pour télécharger les images nécessaires à NSX Application platform</p>
 <p><img src="/fr/p/nsx-application-platform-cse/nsx-application-platform-worker-node.png"
 	width="1427"
 	height="601"
@@ -475,12 +475,12 @@ if (!doNotTrack) {
 ></p>
 <h2 id="configuration-cluster-kubernetes">Configuration Cluster Kubernetes</h2>
 <h3 id="persistent-volumes">Persistent Volumes</h3>
-<p>Le driver de stockage par défaut est limité à 15 PVC par worker node. Cependant NSX Application platorm nécessité environs 17 ou 18 PVC par Worker node. Vous devez donc configurer un autre driver de stockage. Vous pouvez utiliser le driver CSI NFS, un de mes précédant article décrit la procédure d&rsquo;installation :</p>
+<p>Le driver de stockage par défaut est limité à 15 PVC par worker node. Cependant, NSX Application platorm nécessite environ 17 ou 18 PVC par Worker node. Vous devez donc configurer un autre driver de stockage. Vous pouvez utiliser le driver CSI NFS, un de mes précédents articles décrit la procédure d&rsquo;installation :</p>
 <p><a class="link" href="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/"  title="Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine"
      target="_blank" rel="noopener"
     >Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine</a>.</p>
 <h3 id="clenning">Clenning</h3>
-<p>Certains composants installés par défaut par Container Service Engine sont incompatible avec un nouveau déploiement d&rsquo;NSX Application plateforme, vous devez supprimer les composants suivant :</p>
+<p>Certains composants installés par défaut par Container Service Engine sont incompatibles avec un nouveau déploiement d&rsquo;NSX Application plateforme, vous devez supprimer les composants suivant :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -604,7 +604,7 @@ if (!doNotTrack) {
 		data-flex-basis="2209px"
 	
 ></p>
-<p>Si vous avez correctement supprimé l&rsquo;ensemble des ressources dépendent de cert-manager, déployé le nombre correct de Master et Worker node, et respecter les ressources hardware indiqué dans la documentation VMware, l&rsquo;ensemble des check devrait être réussi</p>
+<p>Si vous avez correctement supprimé l&rsquo;ensemble des ressources dépendantes de cert-manager, déployé le nombre correct de Master et Worker node, et respecté les ressources hardware indiquées dans la documentation VMware, l&rsquo;ensemble des check devrait être réussi</p>
 <p><img src="/fr/p/nsx-application-platform-cse/nsx-application-platform-check.png"
 	width="2554"
 	height="1127"
