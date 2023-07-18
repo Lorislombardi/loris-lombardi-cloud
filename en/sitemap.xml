@@ -47,19 +47,19 @@
                 href="https://www.loris-lombardi.cloud/tags/cloud-director/"
                 />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/container-service-engine/</loc>
+    <loc>https://www.loris-lombardi.cloud/tags/container-service-extension/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.loris-lombardi.cloud/fr/tags/container-service-engine/"
+                href="https://www.loris-lombardi.cloud/fr/tags/container-service-extension/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/tags/container-service-engine/"
+                href="https://www.loris-lombardi.cloud/tags/container-service-extension/"
                 />
   </url><url>
     <loc>https://www.loris-lombardi.cloud/tags/kubernetes/</loc>
@@ -182,19 +182,19 @@
                 href="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/"
                 />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/</loc>
+    <loc>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-engine/"
+                href="https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-extension/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/"
+                href="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/"
                 />
   </url><url>
     <loc>https://www.loris-lombardi.cloud/archives/</loc>

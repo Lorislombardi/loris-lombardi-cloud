@@ -13,7 +13,7 @@
         
         <guid>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&lt;/p&gt;
-&lt;p&gt;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service engine.&lt;/p&gt;
+&lt;p&gt;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service Extension.&lt;/p&gt;
 &lt;h1 id=&#34;nsx-application-platform-avec-cse&#34;&gt;NSX Application Platform avec CSE&lt;/h1&gt;
 &lt;h2 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h2&gt;
 &lt;ul&gt;
@@ -54,7 +54,7 @@
 		data-flex-basis=&#34;706px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez ensuite déployer votre cluster Kubernetes avec Container Service Engine&lt;/p&gt;
+&lt;p&gt;Vous pouvez ensuite déployer votre cluster Kubernetes avec Container Service Extension&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster.png&#34;
 	width=&#34;1437&#34;
 	height=&#34;416&#34;
@@ -87,11 +87,11 @@
 &lt;h2 id=&#34;configuration-cluster-kubernetes&#34;&gt;Configuration Cluster Kubernetes&lt;/h2&gt;
 &lt;h3 id=&#34;persistent-volumes&#34;&gt;Persistent Volumes&lt;/h3&gt;
 &lt;p&gt;Le driver de stockage par défaut est limité à 15 PVC par worker node. Cependant, NSX Application platorm nécessite environ 17 ou 18 PVC par Worker node. Vous devez donc configurer un autre driver de stockage. Vous pouvez utiliser le driver CSI NFS, un de mes précédents articles décrit la procédure d&amp;rsquo;installation :&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/&#34;  title=&#34;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.loris-lombardi.cloud/p/csi-nfs-container-service-Extension/&#34;  title=&#34;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine&lt;/a&gt;.&lt;/p&gt;
+    &gt;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;clenning&#34;&gt;Clenning&lt;/h3&gt;
-&lt;p&gt;Certains composants installés par défaut par Container Service Engine sont incompatibles avec un nouveau déploiement d&amp;rsquo;NSX Application plateforme, vous devez supprimer les composants suivant :&lt;/p&gt;
+&lt;p&gt;Certains composants installés par défaut par Container Service Extension sont incompatibles avec un nouveau déploiement d&amp;rsquo;NSX Application plateforme, vous devez supprimer les composants suivant :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1

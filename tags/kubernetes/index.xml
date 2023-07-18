@@ -13,7 +13,7 @@
         
         <guid>https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Setup NSX Application platform with CSE" /&gt;&lt;p&gt;Since version 3.2 of NSX-T, a Kubernetes cluster is required to install NSX Application Platform, which to use NSX inteligence and other security components to be installed.&lt;/p&gt;
-&lt;p&gt;In this article, we&amp;rsquo;ll look at how to install NSX Application Platform in a Kubernetes environment deployed by Container service engine.&lt;/p&gt;
+&lt;p&gt;In this article, we&amp;rsquo;ll look at how to install NSX Application Platform in a Kubernetes environment deployed by Container service Extension.&lt;/p&gt;
 &lt;h1 id=&#34;nsx-application-platform-with-cse&#34;&gt;NSX Application Platform with CSE&lt;/h1&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
@@ -54,7 +54,7 @@
 		data-flex-basis=&#34;706px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;After this, you can then deploy your Kubernetes cluster with Container Service Engine.&lt;/p&gt;
+&lt;p&gt;After this, you can then deploy your Kubernetes cluster with Container Service Extension.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster.png&#34;
 	width=&#34;1437&#34;
 	height=&#34;416&#34;
@@ -87,11 +87,11 @@
 &lt;h2 id=&#34;kubernetes-cluster-configuration&#34;&gt;Kubernetes cluster configuration&lt;/h2&gt;
 &lt;h3 id=&#34;persistent-volumes&#34;&gt;Persistent Volumes&lt;/h3&gt;
 &lt;p&gt;The default storage driver is limited to 15 PVC per worker node. However, NSX Application platorm requires around 17 or 18 PVCs per worker node. So you need to configure another storage driver. You can use the CSI NFS driver. One of my previous articles describes the installation procedure:&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/&#34;  title=&#34;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.loris-lombardi.cloud/p/csi-nfs-container-service-Extension/&#34;  title=&#34;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine&lt;/a&gt;.&lt;/p&gt;
+    &gt;Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;clenning&#34;&gt;Clenning&lt;/h3&gt;
-&lt;p&gt;Some components installed by default by Container Service Engine are incompatible with a new deployment of NSX Application Platform, you must remove the following components:&lt;/p&gt;
+&lt;p&gt;Some components installed by default by Container Service Extension are incompatible with a new deployment of NSX Application Platform, you must remove the following components:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -262,15 +262,15 @@
 </description>
         </item>
         <item>
-        <title>Container Service Engine autoscaling</title>
+        <title>Container Service Extension autoscaling</title>
         <link>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</link>
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Engine autoscaling" /&gt;&lt;p&gt;In this article we&amp;rsquo;ll configure worker node autoscaling for a Kubernetes cluster deployed with Contaier Service Engine 4.0.3. This feature is very useful when using HPA (Horizontal Pod Autoscaling). It allows you to deploy additional Worker nodes according to the load required by your applications.&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Extension autoscaling" /&gt;&lt;p&gt;In this article we&amp;rsquo;ll configure worker node autoscaling for a Kubernetes cluster deployed with Contaier Service Extension 4.0.3. This feature is very useful when using HPA (Horizontal Pod Autoscaling). It allows you to deploy additional Worker nodes according to the load required by your applications.&lt;/p&gt;
 &lt;h1 id=&#34;requirements&#34;&gt;Requirements&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;A working Kubernetes cluster deployed with Container Service Engine&lt;/li&gt;
+&lt;li&gt;A working Kubernetes cluster deployed with Container Service Extension&lt;/li&gt;
 &lt;li&gt;Some knowledge of Kubernetes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;test-environment&#34;&gt;Test environment&lt;/h1&gt;
@@ -1361,12 +1361,12 @@
 </description>
         </item>
         <item>
-        <title>Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine</title>
-        <link>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/</link>
+        <title>Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension</title>
+        <link>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/</link>
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-engine/tkgm-csi-nfs.jpg" alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Engine" /&gt;&lt;p&gt;In this article we&amp;rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Engine (CSE).&lt;/p&gt;
+        <guid>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/</guid>
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/tkgm-csi-nfs.jpg" alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension" /&gt;&lt;p&gt;In this article we&amp;rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Extension (CSE).&lt;/p&gt;
 &lt;h1 id=&#34;why-use-another-storage-driver&#34;&gt;Why use another storage driver?&lt;/h1&gt;
 &lt;p&gt;Clusters deployed by CSE are installed by default with the following driver &lt;a class=&#34;link&#34; href=&#34;https://github.com/vmware/cloud-director-named-disk-csi-driver&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;cloud-director-named-disk-csi-driver&lt;/a&gt;&lt;/p&gt;
