@@ -6,11 +6,13 @@
         <description>Recent content in Posts on Loris Lombardi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
+        <managingEditor>loris.lombardi@neoedge.fr (Loris LOMBARDI)</managingEditor>
+        <webMaster>loris.lombardi@neoedge.fr (Loris LOMBARDI)</webMaster>
         <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Setup NSX Application platform with CSE</title>
         <link>https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/</link>
         <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Setup NSX Application platform with CSE" /&gt;&lt;p&gt;Since version 3.2 of NSX-T, a Kubernetes cluster is required to install NSX Application Platform, which to use NSX inteligence and other security components to be installed.&lt;/p&gt;
 &lt;p&gt;In this article, we&amp;rsquo;ll look at how to install NSX Application Platform in a Kubernetes environment deployed by Container service Extension.&lt;/p&gt;
@@ -265,7 +267,7 @@
         <title>Container Service Extension autoscaling</title>
         <link>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</link>
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Extension autoscaling" /&gt;&lt;p&gt;In this article we&amp;rsquo;ll configure worker node autoscaling for a Kubernetes cluster deployed with Contaier Service Extension 4.0.3. This feature is very useful when using HPA (Horizontal Pod Autoscaling). It allows you to deploy additional Worker nodes according to the load required by your applications.&lt;/p&gt;
 &lt;h1 id=&#34;requirements&#34;&gt;Requirements&lt;/h1&gt;
@@ -1364,7 +1366,7 @@
         <title>Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension</title>
         <link>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/</link>
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/tkgm-csi-nfs.jpg" alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension" /&gt;&lt;p&gt;In this article we&amp;rsquo;re going to install a new storage driver for persistent data for your containers hosted on a Tanzu TKGm cluster provided by Cloud Director and Container Service Extension (CSE).&lt;/p&gt;
 &lt;h1 id=&#34;why-use-another-storage-driver&#34;&gt;Why use another storage driver?&lt;/h1&gt;

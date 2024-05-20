@@ -6,11 +6,13 @@
         <description>Recent content on Loris Lombardi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fr</language>
+        <managingEditor>loris.lombardi@neoedge.fr (Loris LOMBARDI)</managingEditor>
+        <webMaster>loris.lombardi@neoedge.fr (Loris LOMBARDI)</webMaster>
         <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/fr/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Installer NSX Application platform avec CSE</title>
         <link>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</link>
         <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&lt;/p&gt;
 &lt;p&gt;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service Extension.&lt;/p&gt;
@@ -265,7 +267,7 @@
         <title>Container Service Extension autoscaling</title>
         <link>https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/</link>
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Extension autoscaling" /&gt;&lt;p&gt;Dans cet article nous allons configurer l&amp;rsquo;autoscaling d&amp;rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Extension 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.&lt;/p&gt;
 &lt;h1 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h1&gt;
@@ -1365,7 +1367,7 @@
         <title>TKGm Container Service Extension driver NFS</title>
         <link>https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-extension/</link>
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-extension/</guid>
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/tkgm-csi-nfs.jpg" alt="Featured image of post TKGm Container Service Extension driver NFS" /&gt;&lt;p&gt;Dans cet article nous allons installer un nouveau driver de stockage pour les données persistantes de vos containers hébergés sur un cluster Tanzu TKGm fournis par Cloud Director et Container Service Extension (CSE).&lt;/p&gt;
 &lt;h1 id=&#34;pourquoi-utiliser-un-autre-driver-de-stockage-&#34;&gt;Pourquoi utiliser un autre driver de stockage ?&lt;/h1&gt;
@@ -1950,7 +1952,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
         <title>Archives</title>
         <link>https://www.loris-lombardi.cloud/fr/archives/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/archives/</guid>
         <description></description>
         </item>
@@ -1958,7 +1960,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
         <title>About</title>
         <link>https://www.loris-lombardi.cloud/fr/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/about/</guid>
         <description>&lt;p&gt;Passionné par les environnements cloud et réseaux au travers de ce blog je souhaite partager mes connaissances, mes découvertes et mes conseils autour des technologies VMware, Fortinet, Cisco le scripting PowerShell.&lt;/p&gt;
 &lt;p&gt;&lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;62074aaa-abb5-4de7-807f-cc37c9ca26e8&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt;&lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;4a446972-0d7e-45da-a9d6-4e30adc94c50&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt; &lt;div data-iframe-width=&#34;350&#34; data-iframe-height=&#34;270&#34; data-share-badge-id=&#34;6f3cf42b-7c70-4cd9-99e9-41fba1a508fa&#34; data-share-badge-host=&#34;https://www.credly.com&#34;&gt;&lt;/div&gt;&lt;script type=&#34;text/javascript&#34; async src=&#34;//cdn.credly.com/assets/utilities/embed.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
@@ -1969,7 +1971,7 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
         <title>Search</title>
         <link>https://www.loris-lombardi.cloud/fr/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
+        <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
         <guid>https://www.loris-lombardi.cloud/fr/search/</guid>
         <description></description>
         </item>
