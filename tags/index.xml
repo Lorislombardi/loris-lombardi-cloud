@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Tags on Loris Lombardi</title>
-        <link>https://www.loris-lombardi.cloud/tags/</link>
-        <description>Recent content in Tags on Loris Lombardi</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Cloud Director</title>
-        <link>https://www.loris-lombardi.cloud/tags/cloud-director/</link>
-        <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.loris-lombardi.cloud/tags/cloud-director/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Container Service Engine</title>
-        <link>https://www.loris-lombardi.cloud/tags/container-service-engine/</link>
-        <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.loris-lombardi.cloud/tags/container-service-engine/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Kubernetes</title>
-        <link>https://www.loris-lombardi.cloud/tags/kubernetes/</link>
-        <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.loris-lombardi.cloud/tags/kubernetes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>NSX</title>
-        <link>https://www.loris-lombardi.cloud/tags/nsx/</link>
-        <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.loris-lombardi.cloud/tags/nsx/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>TKGm</title>
-        <link>https://www.loris-lombardi.cloud/tags/tkgm/</link>
-        <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.loris-lombardi.cloud/tags/tkgm/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Tags on </title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Director</title>
+      <link>/tags/cloud-director/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/cloud-director/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container Service Extension</title>
+      <link>/tags/container-service-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/container-service-extension/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>/tags/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NSX</title>
+      <link>/tags/nsx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/nsx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TKGm</title>
+      <link>/tags/tkgm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/tkgm/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>
