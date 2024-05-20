@@ -10,20 +10,29 @@
 <meta property='og:description' content='Configuration de l&#39;autoscaling de Worker-node'>
 <meta property='og:url' content='https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/'>
 <meta property='og:site_name' content='Loris Lombardi'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloud Director' /><meta property='article:tag' content='Kubernetes' /><meta property='article:tag' content='Container Service Extension' /><meta property='article:tag' content='TKGm' /><meta property='article:published_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloud Director' /><meta property='article:tag' content='Kubernetes' /><meta property='article:tag' content='Container Service Extension' /><meta property='article:tag' content='TKGm' /><meta property='article:published_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
 <meta name="twitter:title" content="Container Service Extension autoscaling">
 <meta name="twitter:description" content="Configuration de l&#39;autoscaling de Worker-node"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LCJM3RBJDN"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-LCJM3RBJDN', { 'anonymize_ip': false });
-}
-</script>
+    <meta name="twitter:image" content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCJM3RBJDN"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-LCJM3RBJDN');
+        }
+      </script>
+    
+  
+
 
     </head>
     <body class="
@@ -62,7 +71,7 @@ if (!doNotTrack) {
         
             
             <figure class="site-avatar">
-                <a href="/fr">
+                <a href="/fr/">
                 
                     
                     
@@ -309,8 +318,8 @@ if (!doNotTrack) {
     <header class="article-header">
         <div class="article-image">
             <a href="/fr/p/cse-kubernetes-hpa-autoscaling/">
-                <img src="/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_800x0_resize_box_3.png"
-                        srcset="/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_800x0_resize_box_3.png 800w, /fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_1600x0_resize_box_3.png 1600w"
+                <img src="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_800x0_resize_box_3.png"
+                        srcset="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_800x0_resize_box_3.png 800w, /p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling_hu6f5b223d0965fa925062afe10f8ce322_369195_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="324" 
                         loading="lazy"
@@ -1353,10 +1362,10 @@ if (!doNotTrack) {
 </div>
 </div><h2 id="configuration-rdeprojector">Configuration rdeprojector</h2>
 <p>Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&rsquo;ajouter ou supprimer des worker node à partir de l&rsquo;interface graphique de cloud director</p>
-<p><img src="/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png"
+<p><img src="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png"
 	width="1691"
 	height="703"
-	srcset="/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_480x0_resize_box_3.png 480w, /fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_1024x0_resize_box_3.png 1024w"
+	srcset="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_480x0_resize_box_3.png 480w, /p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_1024x0_resize_box_3.png 1024w"
 	loading="lazy"
 	
 		alt="Cloud Director Scaling Worker node"
@@ -1438,10 +1447,10 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="go">k8slorislombardi-worker-node-pool-1   k8slorislombardi   2          1       2         1             ScalingUp   24h   v1.21.11+vmware.1
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="/fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling.png"
+</div><p><img src="/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling.png"
 	width="1343"
 	height="195"
-	srcset="/fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_480x0_resize_box_3.png 480w, /fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_1024x0_resize_box_3.png 1024w"
+	srcset="/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_480x0_resize_box_3.png 480w, /p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_1024x0_resize_box_3.png 1024w"
 	loading="lazy"
 	
 		alt="Cloud Director Scaling node"
@@ -1519,7 +1528,19 @@ if (!doNotTrack) {
     </section>
 
 
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            Dernière mise à jour le Jun 18, 2023 00:00 UTC
+        </span>
+    </section></footer>
 
 
     
@@ -1540,7 +1561,7 @@ if (!doNotTrack) {
         
         
             <div class="article-image">
-                <img src="/fr/p/nsx-application-platform-cse/_hu64c2f9d239ba330faa306d5cc1b9bca5_126085_940ce8618628c8e21c68c684e3cc5e2e.jpg" 
+                <img src="/p/nsx-application-platform-cse/_hu64c2f9d239ba330faa306d5cc1b9bca5_126085_940ce8618628c8e21c68c684e3cc5e2e.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1564,7 +1585,7 @@ if (!doNotTrack) {
         
         
             <div class="article-image">
-                <img src="/fr/p/csi-nfs-container-service-extension/tkgm-csi-nfs.2a857e38117754f99cc5f96415c44ce9_hu5ef57efeb7aec44e7c981e798331684a_122775_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/csi-nfs-container-service-extension/tkgm-csi-nfs.2a857e38117754f99cc5f96415c44ce9_hu5ef57efeb7aec44e7c981e798331684a_122775_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1591,7 +1612,7 @@ if (!doNotTrack) {
         
     <div class="disqus-container">
     <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -1639,7 +1660,7 @@ if (!doNotTrack) {
         
             2020 - 
         
-        2023 Loris Lombardi
+        2024 Loris Lombardi
     </section>
     
     <section class="powerby">

@@ -12,7 +12,7 @@
         <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Installer NSX Application platform avec CSE" /&gt;&lt;p&gt;Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&lt;/p&gt;
 &lt;p&gt;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service Extension.&lt;/p&gt;
 &lt;h1 id=&#34;nsx-application-platform-avec-cse&#34;&gt;NSX Application Platform avec CSE&lt;/h1&gt;
 &lt;h2 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h2&gt;
@@ -40,10 +40,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Dans un premier temps, au sein de votre Cloud Director vous devez créer une nouvelle VM sizing policy&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies.png&#34;
 	width=&#34;1843&#34;
 	height=&#34;626&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies_hu4122bc909a837c7a74e34bceb4cf14d4_81730_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies_hu4122bc909a837c7a74e34bceb4cf14d4_81730_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies_hu4122bc909a837c7a74e34bceb4cf14d4_81730_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-sizing-policies_hu4122bc909a837c7a74e34bceb4cf14d4_81730_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform Sizing Policies&#34;
@@ -55,10 +55,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Vous pouvez ensuite déployer votre cluster Kubernetes avec Container Service Extension&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster.png&#34;
 	width=&#34;1437&#34;
 	height=&#34;416&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster_huf7d76d364656a5002bca37cd867c4b0d_57458_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster_huf7d76d364656a5002bca37cd867c4b0d_57458_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster_huf7d76d364656a5002bca37cd867c4b0d_57458_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-cse-cluster_huf7d76d364656a5002bca37cd867c4b0d_57458_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform CSE Cluster&#34;
@@ -70,10 +70,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Vous devez augmenter l&amp;rsquo;espace disque des worker node afin d&amp;rsquo;avoir suffisamment d&amp;rsquo;espace libre pour télécharger les images nécessaires à NSX Application platform&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-worker-node.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-worker-node.png&#34;
 	width=&#34;1427&#34;
 	height=&#34;601&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-worker-node_hu0b4f0562b504eee1441b0914c7e5b7f7_69353_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-worker-node_hu0b4f0562b504eee1441b0914c7e5b7f7_69353_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-worker-node_hu0b4f0562b504eee1441b0914c7e5b7f7_69353_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-worker-node_hu0b4f0562b504eee1441b0914c7e5b7f7_69353_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform CSE Cluster&#34;
@@ -186,10 +186,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Vous pouvez maintenant lancer le Wizzard d&amp;rsquo;installation. N&amp;rsquo;oubliez pas de sélectionner la storage classe adéquate :&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-deploiement.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-deploiement.png&#34;
 	width=&#34;1670&#34;
 	height=&#34;691&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-deploiement_hua5b0a5a5bf9ef9f34a31ab125586288a_181306_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-deploiement_hua5b0a5a5bf9ef9f34a31ab125586288a_181306_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-deploiement_hua5b0a5a5bf9ef9f34a31ab125586288a_181306_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-deploiement_hua5b0a5a5bf9ef9f34a31ab125586288a_181306_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform Wizzard&#34;
@@ -201,10 +201,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Le FQDN Interface Service Name correspond à l&amp;rsquo;IP du service contour déployé par NSX Application platform. Durant le déploiement  vous pouvez déterminer l&amp;rsquo;IP assigné au service Contour et modifier vos enregistrements DNS en fonction.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc.png&#34;
 	width=&#34;1215&#34;
 	height=&#34;132&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc_hu194924157aeff3f2a3ba9171f3623045_26144_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc_hu194924157aeff3f2a3ba9171f3623045_26144_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc_hu194924157aeff3f2a3ba9171f3623045_26144_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-k-get-svc_hu194924157aeff3f2a3ba9171f3623045_26144_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform k get svc &#34;
@@ -216,10 +216,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Si vous avez correctement supprimé l&amp;rsquo;ensemble des ressources dépendantes de cert-manager, déployé le nombre correct de Master et Worker node, et respecté les ressources hardware indiquées dans la documentation VMware, l&amp;rsquo;ensemble des check devrait être réussi&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-check.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-check.png&#34;
 	width=&#34;2554&#34;
 	height=&#34;1127&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-check_hucb303cde2af56183f6cb56b6952c0ff0_117001_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-check_hucb303cde2af56183f6cb56b6952c0ff0_117001_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-check_hucb303cde2af56183f6cb56b6952c0ff0_117001_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-check_hucb303cde2af56183f6cb56b6952c0ff0_117001_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform Check &#34;
@@ -231,10 +231,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Après quelques minutes vous serez en mesure d&amp;rsquo;activer NSX Intelligence et l&amp;rsquo;utiliser sur votre environnement&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence.png&#34;
 	width=&#34;1915&#34;
 	height=&#34;762&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence_huf687b8c393244c284dce2763e8b25e6d_131539_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence_huf687b8c393244c284dce2763e8b25e6d_131539_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence_huf687b8c393244c284dce2763e8b25e6d_131539_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence_huf687b8c393244c284dce2763e8b25e6d_131539_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform intelligence enable &#34;
@@ -245,10 +245,10 @@
 		data-flex-basis=&#34;603px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view.png&#34;
 	width=&#34;1501&#34;
 	height=&#34;765&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view_hu748659dbacc42b781cc8ae3563f58217_665080_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view_hu748659dbacc42b781cc8ae3563f58217_665080_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view_hu748659dbacc42b781cc8ae3563f58217_665080_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/nsx-application-platform-intelligence-view_hu748659dbacc42b781cc8ae3563f58217_665080_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;NSX Application platform intelligence view &#34;
@@ -267,7 +267,7 @@
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Extension autoscaling" /&gt;&lt;p&gt;Dans cet article nous allons configurer l&amp;rsquo;autoscaling d&amp;rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Extension 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png" alt="Featured image of post Container Service Extension autoscaling" /&gt;&lt;p&gt;Dans cet article nous allons configurer l&amp;rsquo;autoscaling d&amp;rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Extension 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.&lt;/p&gt;
 &lt;h1 id=&#34;pré-requis&#34;&gt;Pré requis&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Un cluster Kubernetes fonctionnel déployé avec Container Service Extension&lt;/li&gt;
@@ -1212,10 +1212,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;configuration-rdeprojector&#34;&gt;Configuration rdeprojector&lt;/h2&gt;
 &lt;p&gt;Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&amp;rsquo;ajouter ou supprimer des worker node à partir de l&amp;rsquo;interface graphique de cloud director&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png&#34;
 	width=&#34;1691&#34;
 	height=&#34;703&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director_huff410773f646fe263e941db44fbec5df_100644_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Cloud Director Scaling Worker node&#34;
@@ -1297,10 +1297,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;k8slorislombardi-worker-node-pool-1   k8slorislombardi   2          1       2         1             ScalingUp   24h   v1.21.11+vmware.1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling.png&#34;
 	width=&#34;1343&#34;
 	height=&#34;195&#34;
-	srcset=&#34;https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_480x0_resize_box_3.png 480w, https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-node-scaling_hucf3b2754c540acb29ea0dfebd77ae380_42259_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Cloud Director Scaling node&#34;
@@ -1367,7 +1367,7 @@
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-extension/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/fr/p/csi-nfs-container-service-extension/tkgm-csi-nfs.jpg" alt="Featured image of post TKGm Container Service Extension driver NFS" /&gt;&lt;p&gt;Dans cet article nous allons installer un nouveau driver de stockage pour les données persistantes de vos containers hébergés sur un cluster Tanzu TKGm fournis par Cloud Director et Container Service Extension (CSE).&lt;/p&gt;
+        <description>&lt;img src="https://www.loris-lombardi.cloud/p/csi-nfs-container-service-extension/tkgm-csi-nfs.jpg" alt="Featured image of post TKGm Container Service Extension driver NFS" /&gt;&lt;p&gt;Dans cet article nous allons installer un nouveau driver de stockage pour les données persistantes de vos containers hébergés sur un cluster Tanzu TKGm fournis par Cloud Director et Container Service Extension (CSE).&lt;/p&gt;
 &lt;h1 id=&#34;pourquoi-utiliser-un-autre-driver-de-stockage-&#34;&gt;Pourquoi utiliser un autre driver de stockage ?&lt;/h1&gt;
 &lt;p&gt;Les clusters déployés par CSE sont installés par défaut avec le driver &lt;a class=&#34;link&#34; href=&#34;https://github.com/vmware/cloud-director-named-disk-csi-driver&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;cloud-director-named-disk-csi-driver&lt;/a&gt;&lt;/p&gt;
