@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kubernetes on Andrew Owen | Écrivain | Concepteur</title>
-    <link>/fr/tags/kubernetes/</link>
-    <description>Recent content in Kubernetes on Andrew Owen | Écrivain | Concepteur</description>
+    <title>Container Service Extension on Andrew Owen | Écrivain | Concepteur</title>
+    <link>/fr/tags/container-service-extension/</link>
+    <description>Recent content in Container Service Extension on Andrew Owen | Écrivain | Concepteur</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/fr/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installer NSX Application platform avec CSE</title>
-      <link>/fr/post/nsx-application-platform-cse/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/fr/post/nsx-application-platform-cse/</guid>
-      <description>Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&#xA;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service engine.&#xA;NSX Application Platform avec CSE Pré requis Environnement NSX fonctionnel Environnement CSE fonctionnel Quelques connaissances Kubernetes Déploiement Cluster Kubernetes Nous allons déployer NSX Application Platform en mode évaluation, en accord avec la documentation VMware vous devez déployer :</description>
-    </item>
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/fr/tags/container-service-extension/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Container Service Extension autoscaling</title>
       <link>/fr/post/cse-kubernetes-hpa-autoscaling/</link>
