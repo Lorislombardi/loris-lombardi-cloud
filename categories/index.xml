@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<<<<<<< HEAD
     <channel>
         <title>Categories on Loris Lombardi</title>
         <link>https://www.loris-lombardi.cloud/categories/</link>
@@ -26,4 +27,14 @@
         </item>
         
     </channel>
+=======
+  <channel>
+    <title>Categories on Loris Lomabrdi</title>
+    <link>https://www.loris-lombardi.cloud/categories/</link>
+    <description>Recent content in Categories on Loris Lomabrdi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.loris-lombardi.cloud/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </rss>

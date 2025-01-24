@@ -4,15 +4,16 @@
   <sitemap>
     <loc>https://www.loris-lombardi.cloud/en/sitemap.xml</loc>
     
-      <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    
   </sitemap>
   
   <sitemap>
     <loc>https://www.loris-lombardi.cloud/fr/sitemap.xml</loc>
     
+<<<<<<< HEAD
       <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     
+=======
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
   </sitemap>
   
 </sitemapindex>

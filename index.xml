@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<<<<<<< HEAD
     <channel>
         <title>Loris Lombardi</title>
         <link>https://www.loris-lombardi.cloud/</link>
@@ -1976,4 +1977,14 @@ This PVC is created via the default driver: cloud-director-named-disk-csi-driver
         </item>
         
     </channel>
+=======
+  <channel>
+    <title>Loris Lomabrdi</title>
+    <link>https://www.loris-lombardi.cloud/</link>
+    <description>Recent content on Loris Lomabrdi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.loris-lombardi.cloud/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </rss>

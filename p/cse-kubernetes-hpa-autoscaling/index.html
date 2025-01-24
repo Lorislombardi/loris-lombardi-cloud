@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
     <head><meta charset='utf-8'>
+<<<<<<< HEAD
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Setup autoscaling for Worker-node with Container Service Extension'>
 <title>Container Service Extension autoscaling</title>
 
@@ -13,6 +14,20 @@
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloud Director' /><meta property='article:tag' content='Kubernetes' /><meta property='article:tag' content='Container Service Extension' /><meta property='article:tag' content='TKGm' /><meta property='article:published_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
 <meta name="twitter:title" content="Container Service Extension autoscaling">
 <meta name="twitter:description" content="Setup autoscaling for Worker-node with Container Service Extension"><meta name="twitter:card" content="summary_large_image">
+=======
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Configuration de l&#39;autoscaling de Worker-node'>
+<title>Container Service Engine autoscaling</title>
+
+<link rel='canonical' href='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/'>
+
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='Container Service Engine autoscaling'>
+<meta property='og:description' content='Configuration de l&#39;autoscaling de Worker-node'>
+<meta property='og:url' content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/'>
+<meta property='og:site_name' content='Loris Lombardi'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloud Director' /><meta property='article:tag' content='Kubernetes' /><meta property='article:tag' content='Container Service Engine' /><meta property='article:tag' content='TKGm' /><meta property='article:published_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
+<meta name="twitter:title" content="Container Service Engine autoscaling">
+<meta name="twitter:description" content="Configuration de l&#39;autoscaling de Worker-node"><meta name="twitter:card" content="summary_large_image">
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
     <meta name="twitter:image" content='https://www.loris-lombardi.cloud/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling.png' />
   
     
@@ -61,7 +76,7 @@
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -228,9 +243,9 @@
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://www.loris-lombardi.cloud/" selected>English</option>
+                            <option value="https://www.loris-lombardi.cloud/" selected>Francais</option>
                         
-                            <option value="https://www.loris-lombardi.cloud/fr/" >Francais</option>
+                            <option value="https://www.loris-lombardi.cloud/en/" >English</option>
                         
                     </select>
                 </li>
@@ -254,7 +269,7 @@
 
 
 
-                    <span>Dark Mode</span>
+                    <span>Mode sombre</span>
                 </li>
             
         </div>
@@ -278,28 +293,28 @@
 
 
         </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
+        <h2 class="widget-title section-title">Table des matières</h2>
         
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#requirements">Requirements</a></li>
-    <li><a href="#test-environment">Test environment</a></li>
+    <li><a href="#pré-requis">Pré requis</a></li>
+    <li><a href="#environnement-de-test">Environnement de Test</a></li>
     <li><a href="#configuration-hpa">Configuration HPA</a>
       <ol>
-        <li><a href="#metrics-configuration">Metrics configuration</a></li>
-        <li><a href="#hpa-test">HPA test</a>
+        <li><a href="#configuration-metrics">Configuration Metrics</a></li>
+        <li><a href="#test-hpa">Test HPA</a>
           <ol>
-            <li><a href="#load-up">Load up</a></li>
+            <li><a href="#monter-en-charge">Monter en charge</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#enable-autoscaling">Enable autoscaling</a>
+    <li><a href="#activation-de-lautoscaling">Activation de l&rsquo;autoscaling</a>
       <ol>
-        <li><a href="#preparing-the-necessary-components">Preparing the necessary components</a></li>
-        <li><a href="#deploying-the-autoscaler">Deploying the autoscaler</a></li>
-        <li><a href="#rdeprojector-configuration">rdeprojector configuration</a></li>
+        <li><a href="#préparation-des-composants-nécessaires">Préparation des composants nécessaires</a></li>
+        <li><a href="#déploiement-de-lautoscaler">Déploiement de l&rsquo;autoscaler</a></li>
+        <li><a href="#configuration-rdeprojector">Configuration rdeprojector</a></li>
         <li><a href="#test-autoscaling">Test Autoscaling</a></li>
       </ol>
     </li>
@@ -347,7 +362,11 @@
     
         
         <h3 class="article-subtitle">
+<<<<<<< HEAD
             Setup autoscaling for Worker-node with Container Service Extension
+=======
+            Configuration de l&#39;autoscaling de Worker-node
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
         </h3>
         
     </div>
@@ -383,7 +402,7 @@
 
 
                 <time class="article-time--reading">
-                    9 minute read
+                    10 minutes de lecture
                 </time>
             </div>
         
@@ -405,7 +424,7 @@
 
             <div>
                 
-                    <a href="https://www.loris-lombardi.cloud/fr/p/cse-kubernetes-hpa-autoscaling/" class="link">Francais</a>
+                    <a href="https://www.loris-lombardi.cloud/en/p/cse-kubernetes-hpa-autoscaling/" class="link">English</a>
                 
             </div>
         </footer>
@@ -417,13 +436,21 @@
     <section class="article-content">
     
     
+<<<<<<< HEAD
     <p>In this article we&rsquo;ll configure worker node autoscaling for a Kubernetes cluster deployed with Contaier Service Extension 4.0.3. This feature is very useful when using HPA (Horizontal Pod Autoscaling). It allows you to deploy additional Worker nodes according to the load required by your applications.</p>
 <h1 id="requirements">Requirements</h1>
 <ul>
 <li>A working Kubernetes cluster deployed with Container Service Extension</li>
 <li>Some knowledge of Kubernetes</li>
+=======
+    <p>Dans cet article nous allons configurer l&rsquo;autoscaling d&rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Engine 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.</p>
+<h1 id="pré-requis">Pré requis</h1>
+<ul>
+<li>Un cluster Kubernetes fonctionnel déployé avec Container Service Engine</li>
+<li>Quelques connaissances Kubernetes</li>
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </ul>
-<h1 id="test-environment">Test environment</h1>
+<h1 id="environnement-de-test">Environnement de Test</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -443,8 +470,8 @@
 <li>1 Worker node : 2vCPU ; 4Go RAM</li>
 </ul>
 <h1 id="configuration-hpa">Configuration HPA</h1>
-<h2 id="metrics-configuration">Metrics configuration</h2>
-<p>If you haven&rsquo;t already done so, you need to deploy metrics-server on your Kubernetes cluster.</p>
+<h2 id="configuration-metrics">Configuration Metrics</h2>
+<p>Si cela n&rsquo;est pas déjà fait vous devez déployer metrics-server sur votre cluster Kubernetes</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -453,7 +480,7 @@
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>We need to edit the metric server deployment as follows</p>
+</div><p>Nous devons éditer le déploiement du metric server de la manière suivante</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -462,7 +489,7 @@
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">k edit deployments.apps metrics-server -n kube-system
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Enable option <strong>&ndash;kubelet-insecure-tls</strong></p>
+</div><p>Ajoutez l&rsquo;option <strong>&ndash;kubelet-insecure-tls</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -489,8 +516,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imagePullPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">IfNotPresent</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="hpa-test">HPA test</h2>
-<p>From the following template, we will configure a deployment and associate it with an HPA policy.</p>
+</div><h2 id="test-hpa">Test HPA</h2>
+<p>À partir du template suivant, nous allons configurer un déploiement et lui associer une politique HPA</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -579,7 +606,7 @@
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go"> k apply -f  hpa-test.yaml
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>Check</strong></p>
+</div><p><strong>Vérification</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -612,7 +639,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">nginx-nfs-example             1/1     Running   0          12h
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>We then create a Load-balancer VIP for our deployment</p>
+</div><p>Nous créons ensuite une VIP de type Load-balancer pour notre déploiement</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -621,7 +648,7 @@
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">k expose deployment hpa-example --type=LoadBalancer --port=80
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>In our example, the load-balancer assigns the IP <strong>172.31.7.210</strong></p>
+</div><p>Dans notre exemple le load-balancer assigne l&rsquo;IP <strong>172.31.7.210</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -636,8 +663,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">kubernetes    ClusterIP      100.64.0.1       &lt;none&gt;         443/TCP        20h
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="load-up">Load up</h3>
-<p>We are now going to ramp up our application</p>
+</div><h3 id="monter-en-charge">Monter en charge</h3>
+<p>Nous allons maintenant faire monter en charge notre application</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -678,8 +705,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>After a few minutes, you can see the HPA feature in action</p>
-<p>Hight CPU utilization for pod</p>
+</div><p>Après quelques minutes on peut voir que la fonctionnalité HPA entre en action</p>
+<p>Saturation de la charge CPU des pod</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -692,7 +719,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">hpa-example-autoscaler   Deployment/hpa-example   381%/50%   1         10        4          35m
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>You can see that the HPA is trying to create a new POD, but the CPU resources of the worker node are also too hight</p>
+</div><p>On peut voir que l&rsquo;HPA essaye de créer de nouveau POD cependant les ressources CPU du worker node sont également saturés</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -729,10 +756,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">  Warning  FailedScheduling  11s (x3 over 82s)  default-scheduler  0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn&#39;t tolerate.
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="enable-autoscaling">Enable autoscaling</h1>
-<p>This feature is not enabled by default on Kubernetes clusters deployed by CSE and is not yet implemented by VMware. Here&rsquo;s a step-by-step method for configuring this feature while we wait for it to be integrated into the development roadmap.</p>
-<h2 id="preparing-the-necessary-components">Preparing the necessary components</h2>
-<p>Identify your cluster&rsquo;s admin namespace. In this example, my cluster is named <strong>k8slorislombardi</strong></p>
+</div><h1 id="activation-de-lautoscaling">Activation de l&rsquo;autoscaling</h1>
+<p>Cette fonctionnalité n&rsquo;est pas activée par défaut sur les cluster Kubernetes déployés par CSE et n&rsquo;est pas encore implémentée par VMware. Voici une méthode pas à pas pour configurer cette fonctionnalité en attendant que celle-ci soit intégrée dans la road-map de développement.</p>
+<h2 id="préparation-des-composants-nécessaires">Préparation des composants nécessaires</h2>
+<p>Identifier le namespace admin de votre cluster. Dans cet exemple mon cluster est nommé <strong>k8slorislombardi</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -777,10 +804,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">tkr-system                          Active   21h
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>The &ldquo;admin&rdquo; namespace for this cluster is therefore <strong>k8slorislombardi-ns</strong>.</p>
-<p>All the steps below must be performed in the &ldquo;admin&rdquo; namespace: k8slorislombardi-ns</p>
+</div><p>Le namespace &ldquo;admin&rdquo; de ce cluster est donc <strong>k8slorislombardi-ns</strong></p>
+<p>Toutes les étapes ci-dessous sont à réaliser dans le namespace &ldquo;admin&rdquo; : k8slorislombardi-ns</p>
 <ol>
-<li>Create a temporary pod and a PVC containing our kubeconfig</li>
+<li>Créer un pod temporaire et un PVC contenant notre kubeconfig</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -852,7 +879,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">claimName</span><span class="p">:</span><span class="w"> </span><span class="l">pvc-autoscaler</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Implementation and checking</p>
+</div><p>Application et vérification</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -878,7 +905,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
-<li>Copy kubeconfig file</li>
+<li>Copie du fichier kubeconfig</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -896,8 +923,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">vi config
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Copy the contents of your kubeconfig into a new file named config</p>
-<p>You can then delete the pod-temporary</p>
+</div><p>Copiez le contenu de votre kubeconfig dans un nouveau fichier nommé config</p>
+<p>Vous pouvez ensuite supprimer le pod-temporaire</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -907,7 +934,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
-<li>Configure worker-node pool hardware resources</li>
+<li>Configurer les ressources hardware du pool worker-node</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -925,10 +952,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">k edit machinedeployments.cluster.x-k8s.io k8slorislombardi-worker-node-pool-1
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>We modify the parameters of the machinedeployments.cluster.x-k8s.io property to define :</p>
+</div><p>Nous modifions les paramètres de la propriété machinedeployments.cluster.x-k8s.io afin de définir :</p>
 <ul>
-<li>The maximum and minimum number of worker-nodes in the pool</li>
-<li>Worker-node hardware resources to be deployed</li>
+<li>Le nombre maximum et minimum de Worker-node présent dans le pool</li>
+<li>Les ressources hardware des worker-node à déployer</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -962,9 +989,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">machinedeployment.clusters.x-k8s.io/revision</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;1&#34;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="deploying-the-autoscaler">Deploying the autoscaler</h2>
-<p>We use the following yaml to use the previously created PVC to retrieve the kubeconfig.</p>
-<p>Be sure to replace <strong>k8slorislombardi</strong> and <strong>k8slorislombardi-ns</strong> with your cluster parameters</p>
+</div><h2 id="déploiement-de-lautoscaler">Déploiement de l&rsquo;autoscaler</h2>
+<p>Nous utilisons le yaml suivant pour qu’il utilise le PVC précédemment créé afin de récupérer le kubeconfig.</p>
+<p>Veillez à bien remplacer <strong>k8slorislombardi</strong> et <strong>k8slorislombardi-ns</strong> par les paramètres de votre cluster</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1331,7 +1358,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">watch</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Check</p>
+</div><p>Vérification</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1360,8 +1387,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">cluster-autoscaler-79c5cb9df6-gqlfd   1/1     Running   0          29s
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="rdeprojector-configuration">rdeprojector configuration</h2>
-<p>By default, Cloud director continuously checks the configuration of your Kubernetes cluster via the rdeprojector controller. This controller can also be used to add or remove workers from the cloud director GUI.</p>
+</div><h2 id="configuration-rdeprojector">Configuration rdeprojector</h2>
+<p>Par défaut Cloud director vérifie en permanence la configuration de votre custer Kubernetes via contrôleur rdeprojector. Ce contrôleur permet également d&rsquo;ajouter ou supprimer des worker node à partir de l&rsquo;interface graphique de cloud director</p>
 <p><img src="/p/cse-kubernetes-hpa-autoscaling/cse-auto-scaling-cloud-director.png"
 	width="1691"
 	height="703"
@@ -1376,6 +1403,7 @@
 		data-flex-basis="577px"
 	
 ></p>
+<p>Le contrôleur rdeprojector ne peut pas fonctionner avec la configuration autoscale que nous venons de déployer. En effet l&rsquo;autoscaler va déployer un nouveau worker-node, rdeprojector va détecter une incohérence et donc supprimer le nouveau worker-node. A noter qu&rsquo;il ne sera plus possible de modifier la configuration de votre cluster à partir de l&rsquo;interface graphique de Cloud Director.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1384,7 +1412,7 @@
 <pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">k edit deployments.apps rdeprojector-controller-manager -n rdeprojector-system
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Scale down th replica at 0</p>
+</div><p>Modifier le nombre de replicas à 0</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1420,7 +1448,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>As seen above, a few minutes later we can the a hight CPU utilization for the Pods and the Worker node.</p>
+</div><p>Comme vu précédemment quelques minutes plus tard le CPU des Pod et du Worker node sont saturés</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1433,7 +1461,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">hpa-example-autoscaler   Deployment/hpa-example   122%/50%   1         10        8          3h17m
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>The autoscaler goes into action and deploys a new Worker-node</p>
+</div><p>L&rsquo;autoscaler entre en action et déploiement un nouveau Worker-node</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1460,7 +1488,7 @@
 		data-flex-basis="1652px"
 	
 ></p>
-<p>Automatic integration of the new Worker-node</p>
+<p>Intégration automatique du nouveau Worker-node</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1477,7 +1505,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">k8slorislombardi-worker-node-pool-1-69f68cc6b9-kfhz9   Ready      &lt;none&gt;                 24h   v1.21.11+vmware.1
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>The new Worker is Ready</p>
+</div><p>Le nouveau Worker est actif</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1494,7 +1522,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">k8slorislombardi-worker-node-pool-1-69f68cc6b9-kfhz9   Ready    &lt;none&gt;                 24h   v1.21.11+vmware.1
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Additional pods deployed</p>
+</div><p>Des pod supplémentaires sont déployés</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1550,12 +1578,13 @@
     
 
 <aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
+    <h2 class="section-title">Contenus liés</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
             
                 
 <article class="has-image">
+<<<<<<< HEAD
     <a href="/p/nsx-application-platform-cse/">
         
         
@@ -1581,6 +1610,9 @@
                 
 <article class="has-image">
     <a href="/p/csi-nfs-container-service-extension/">
+=======
+    <a href="/p/csi-nfs-container-service-engine/">
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
         
         
             <div class="article-image">
@@ -1588,15 +1620,24 @@
                         width="250" 
                         height="150" 
                         loading="lazy"
+<<<<<<< HEAD
                         alt="Featured image of post Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension"
                         data-key="csi-nfs-container-service-Extension" 
+=======
+                        alt="Featured image of post TKGm Container Service Engine driver NFS"
+                        data-key="csi-nfs-container-service-engine" 
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
                         data-hash="md5-KoV&#43;OBF3VPmcxflkFcRM6Q==">
                 
             </div>
         
 
         <div class="article-details">
+<<<<<<< HEAD
             <h2 class="article-title">Setup NFS driver on Kubernetes TKGm cluster provide by Container Service Extension</h2>
+=======
+            <h2 class="article-title">TKGm Container Service Engine driver NFS</h2>
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
         </div>
     </a>
 </article>
@@ -1663,8 +1704,8 @@
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<<<<<<< HEAD
     <channel>
         <title>Pages on Loris Lombardi</title>
         <link>https://www.loris-lombardi.cloud/fr/page/</link>
@@ -37,4 +38,21 @@
         </item>
         
     </channel>
+=======
+  <channel>
+    <title>Pages on Loris Lombardi</title>
+    <link>/fr/page/</link>
+    <description>Recent content in Pages on Loris Lombardi</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="/fr/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/fr/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/fr/page/about/</guid>
+      <description>Passionné par les environnements cloud et réseaux au travers de ce blog je souhaite partager mes connaissances, mes découvertes et mes conseils autour des technologies VMware, Fortinet, Cisco le scripting PowerShell.</description>
+    </item>
+  </channel>
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </rss>

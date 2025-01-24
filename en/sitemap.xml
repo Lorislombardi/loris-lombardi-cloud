@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.loris-lombardi.cloud/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.loris-lombardi.cloud/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.loris-lombardi.cloud/"
-                />
-  </url><url>
     <loc>https://www.loris-lombardi.cloud/categories/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -32,18 +14,16 @@
                 href="https://www.loris-lombardi.cloud/categories/"
                 />
   </url><url>
-    <loc>https://www.loris-lombardi.cloud/tags/cloud-director/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.loris-lombardi.cloud/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.loris-lombardi.cloud/fr/tags/cloud-director/"
+                href="https://www.loris-lombardi.cloud/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+<<<<<<< HEAD
                 href="https://www.loris-lombardi.cloud/tags/cloud-director/"
                 />
   </url><url>
@@ -120,12 +100,12 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/"
+=======
+                href="https://www.loris-lombardi.cloud/"
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
                 />
   </url><url>
     <loc>https://www.loris-lombardi.cloud/tags/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -136,6 +116,7 @@
                 hreflang="en"
                 href="https://www.loris-lombardi.cloud/tags/"
                 />
+<<<<<<< HEAD
   </url><url>
     <loc>https://www.loris-lombardi.cloud/tags/tkgm/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
@@ -268,5 +249,7 @@
                 hreflang="en"
                 href="https://www.loris-lombardi.cloud/search/"
                 />
+=======
+>>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
   </url>
 </urlset>
