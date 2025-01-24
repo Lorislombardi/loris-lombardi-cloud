@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<<<<<<< HEAD
     <channel>
         <title>Loris Lombardi</title>
         <link>https://www.loris-lombardi.cloud/</link>
@@ -18,7 +17,7 @@
         <description>&lt;img src="https://www.loris-lombardi.cloud/p/nsx-application-platform-cse/NSX_Application_Platform.jpg" alt="Featured image of post Setup NSX Application platform with CSE" /&gt;&lt;p&gt;Since version 3.2 of NSX-T, a Kubernetes cluster is required to install NSX Application Platform, which to use NSX inteligence and other security components to be installed.&lt;/p&gt;
 &lt;p&gt;In this article, we&amp;rsquo;ll look at how to install NSX Application Platform in a Kubernetes environment deployed by Container service Extension.&lt;/p&gt;
 &lt;h1 id=&#34;nsx-application-platform-with-cse&#34;&gt;NSX Application Platform with CSE&lt;/h1&gt;
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Functional NSX environment&lt;/li&gt;
 &lt;li&gt;Functional CSE environment&lt;/li&gt;
@@ -1977,14 +1976,4 @@ This PVC is created via the default driver: cloud-director-named-disk-csi-driver
         </item>
         
     </channel>
-=======
-  <channel>
-    <title>Loris Lomabrdi</title>
-    <link>https://www.loris-lombardi.cloud/</link>
-    <description>Recent content on Loris Lomabrdi</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://www.loris-lombardi.cloud/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </rss>

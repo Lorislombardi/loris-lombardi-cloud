@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<<<<<<< HEAD
     <channel>
         <title>Posts on Loris Lombardi</title>
         <link>https://www.loris-lombardi.cloud/fr/post/</link>
@@ -1959,36 +1958,4 @@ Ce PVC est créé via la driver par défaut : cloud-director-named-disk-csi-driv
         </item>
         
     </channel>
-=======
-  <channel>
-    <title>Posts on Loris Lombardi</title>
-    <link>/fr/post/</link>
-    <description>Recent content in Posts on Loris Lombardi</description>
-    <generator>Hugo</generator>
-    <language>fr</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/fr/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installer NSX Application platform avec CSE</title>
-      <link>/fr/post/nsx-application-platform-cse/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/fr/post/nsx-application-platform-cse/</guid>
-      <description>Depuis la version 3.2 d&amp;rsquo;NSX-T, un cluster Kubernetes est nécessaire afin d&amp;rsquo;installer NSX Application Platform qui permet ensuite d&amp;rsquo;installer NSX inteligence et d&amp;rsquo;autres composants de sécurités.&#xA;Dans cet article nous allons voir comment installer NSX Application Platform dans un environnement Kubernetes déployé par Container service engine.&#xA;NSX Application Platform avec CSE Pré requis Environnement NSX fonctionnel Environnement CSE fonctionnel Quelques connaissances Kubernetes Déploiement Cluster Kubernetes Nous allons déployer NSX Application Platform en mode évaluation, en accord avec la documentation VMware vous devez déployer :</description>
-    </item>
-    <item>
-      <title>Container Service Extension autoscaling</title>
-      <link>/fr/post/cse-kubernetes-hpa-autoscaling/</link>
-      <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>/fr/post/cse-kubernetes-hpa-autoscaling/</guid>
-      <description>Dans cet article nous allons configurer l&amp;rsquo;autoscaling d&amp;rsquo;un pool worker node pour un cluster Kubernetes déployé avec Container Service Extension 4.0.3. Cette fonctionnalité est très utile lorsque vous utilisez des HPA (Horizontal Pod Autoscaling). Elle permet de déployer des Worker node supplémentaires en fonction de la charge nécessaire pour vos applications.&#xA;Pré requis : Un cluster Kubernetes fonctionnel déployé avec Container Service Extension Quelques connaissances Kubernetes Environnement de Test k get node NAME STATUS ROLES AGE VERSION k8slorislombardi-control-plane-node-pool-njdvh Ready control-plane,master 21h v1.</description>
-    </item>
-    <item>
-      <title>TKGm Container Service Extension driver NFS</title>
-      <link>/fr/post/csi-nfs-container-service-extension/</link>
-      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>/fr/post/csi-nfs-container-service-extension/</guid>
-      <description>Dans cet article nous allons installer un nouveau driver de stockage pour les données persistantes de vos containers hébergés sur un cluster Tanzu TKGm fournis par Cloud Director et Container Service Extension (CSE).&#xA;Pourquoi utiliser un autre driver de stockage ? Les clusters déployés par CSE sont installés par défaut avec le driver cloud-director-named-disk-csi-driver&#xA;Cependant ce driver possède quelques limites, notamment sur les modes d&amp;rsquo;accès&#xA;CSI Cloud Director Feature matrix</description>
-    </item>
-  </channel>
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
 </rss>

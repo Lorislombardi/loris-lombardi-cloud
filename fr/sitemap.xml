@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-<<<<<<< HEAD
     <loc>https://www.loris-lombardi.cloud/fr/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -22,9 +21,6 @@
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-=======
-    <loc>https://www.loris-lombardi.cloud/fr/categories/</loc>
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,23 +32,18 @@
                 href="https://www.loris-lombardi.cloud/fr/categories/"
                 />
   </url><url>
-<<<<<<< HEAD
     <loc>https://www.loris-lombardi.cloud/fr/tags/cloud-director/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-=======
-    <loc>https://www.loris-lombardi.cloud/fr/</loc>
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.loris-lombardi.cloud/"
+                href="https://www.loris-lombardi.cloud/tags/cloud-director/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-<<<<<<< HEAD
                 href="https://www.loris-lombardi.cloud/fr/tags/cloud-director/"
                 />
   </url><url>
@@ -75,12 +66,6 @@
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-=======
-                href="https://www.loris-lombardi.cloud/fr/"
-                />
-  </url><url>
-    <loc>https://www.loris-lombardi.cloud/fr/tags/</loc>
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -91,7 +76,6 @@
                 hreflang="fr"
                 href="https://www.loris-lombardi.cloud/fr/tags/"
                 />
-<<<<<<< HEAD
   </url><url>
     <loc>https://www.loris-lombardi.cloud/fr/categories/vmware/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
@@ -289,7 +273,5 @@
                 hreflang="fr"
                 href="https://www.loris-lombardi.cloud/fr/search/"
                 />
-=======
->>>>>>> 65a64ef92e54d21ab52d5b403d5fa0d584e530a2
   </url>
 </urlset>
