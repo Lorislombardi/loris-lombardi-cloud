@@ -2,10 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Loris Lombardi</title>
-    <link>/tags/</link>
+    <link>https://www.loris-lombardi.cloud/tags/</link>
     <description>Recent content in Tags on Loris Lombardi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.loris-lombardi.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Director</title>
+      <link>https://www.loris-lombardi.cloud/tags/cloud-director/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.loris-lombardi.cloud/tags/cloud-director/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container Service Extension</title>
+      <link>https://www.loris-lombardi.cloud/tags/container-service-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.loris-lombardi.cloud/tags/container-service-extension/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://www.loris-lombardi.cloud/tags/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.loris-lombardi.cloud/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NSX</title>
+      <link>https://www.loris-lombardi.cloud/tags/nsx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.loris-lombardi.cloud/tags/nsx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TKGm</title>
+      <link>https://www.loris-lombardi.cloud/tags/tkgm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.loris-lombardi.cloud/tags/tkgm/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
