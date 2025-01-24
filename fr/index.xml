@@ -10,11 +10,12 @@
         <webMaster>loris.lombardi@neoedge.fr (Loris LOMBARDI)</webMaster>
         <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loris-lombardi.cloud/fr/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>VMware Cloud Director modifier le siteName et dossier VCenter</title>
-        <link>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</link>
+        <link>https://www.loris-lombardi.cloud/fr/p/vmware-cloud-diector-sitename/</link>
         <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
         <author>loris.lombardi@neoedge.fr (Loris LOMBARDI)</author>
-        <guid>https://www.loris-lombardi.cloud/fr/p/nsx-application-platform-cse/</guid>
-        <description>&lt;img src="https://www.loris-lombardi.cloud/NSX_Application_Platform.jpg" alt="Featured image of post VMware Cloud Director modifier le siteName et dossier VCenter" /&gt;</description>
+        <guid>https://www.loris-lombardi.cloud/fr/p/vmware-cloud-diector-sitename/</guid>
+        <description>&lt;img src="https://www.loris-lombardi.cloud/NSX_Application_Platform.jpg" alt="Featured image of post VMware Cloud Director modifier le siteName et dossier VCenter" /&gt;&lt;p&gt;LL&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Installer NSX Application platform avec CSE</title>
