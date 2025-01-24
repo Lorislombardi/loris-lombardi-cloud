@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Loris Lombardi</title>
-    <link>/fr/tags/</link>
-    <description>Recent content in Tags on Loris Lombardi</description>
+    <title>Tags on Loris Lomabrdi</title>
+    <link>https://www.loris-lombardi.cloud/fr/tags/</link>
+    <description>Recent content in Tags on Loris Lomabrdi</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/fr/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cloud Director</title>
-      <link>/fr/tags/cloud-director/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/cloud-director/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Container Service Engine</title>
-      <link>/fr/tags/container-service-engine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/container-service-engine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>/fr/tags/kubernetes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NSX</title>
-      <link>/fr/tags/nsx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/nsx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TKGm</title>
-      <link>/fr/tags/tkgm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/tkgm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Container Service Extension</title>
-      <link>/fr/tags/container-service-extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/fr/tags/container-service-extension/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://www.loris-lombardi.cloud/fr/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

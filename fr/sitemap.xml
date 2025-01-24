@@ -2,80 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/fr/categories/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://www.loris-lombardi.cloud/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="/categories/"
+                hreflang="en"
+                href="https://www.loris-lombardi.cloud/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/categories/"
+                href="https://www.loris-lombardi.cloud/fr/categories/"
                 />
   </url><url>
-    <loc>/fr/tags/cloud-director/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/tags/container-service-engine/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/post/nsx-application-platform-cse/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/tags/kubernetes/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://www.loris-lombardi.cloud/fr/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="/"
+                hreflang="en"
+                href="https://www.loris-lombardi.cloud/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/"
+                href="https://www.loris-lombardi.cloud/fr/"
                 />
   </url><url>
-    <loc>/fr/tags/nsx/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/post/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/tags/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://www.loris-lombardi.cloud/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="/tags/"
+                hreflang="en"
+                href="https://www.loris-lombardi.cloud/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="/fr/tags/"
+                href="https://www.loris-lombardi.cloud/fr/tags/"
                 />
-  </url><url>
-    <loc>/fr/tags/tkgm/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/categories/vmware/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/tags/container-service-extension/</loc>
-    <lastmod>2023-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/post/cse-kubernetes-hpa-autoscaling/</loc>
-    <lastmod>2023-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/post/csi-nfs-container-service-extension/</loc>
-    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fr/page/about/</loc>
-  </url><url>
-    <loc>/fr/page/</loc>
   </url>
 </urlset>
